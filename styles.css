@@ -4,3 +4,13 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
   color: rgb(0, 0, 0);
 }
+
+.moneyBtn {
+  background-color: limegreen;
+  border: none;
+  drop-shadow: 10px 10px 10px #777;
+}
+
+.moneyBtn:hover {
+  scale: 1.1;
+}
