@@ -10,6 +10,9 @@ h1 {
   border: none;
   drop-shadow: 10px 10px 10px #777;
   
+  width: 10rem;
+  height: 10rem;
+  
   transition: all 1.5s;
 }
 
