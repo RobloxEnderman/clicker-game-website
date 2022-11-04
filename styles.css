@@ -10,7 +10,7 @@ h1 {
   border: none;
   drop-shadow: 10px 10px 10px #777;
   
-  transition: all 1.5;
+  transition: all 1.5s;
 }
 
 .moneyBtn:hover {
