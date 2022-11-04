@@ -12,6 +12,7 @@ h1 {
   
   width: 10rem;
   height: 10rem;
+  align-items: center;
   
   transition: all 1.5s;
 }
