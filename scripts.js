@@ -12,8 +12,10 @@ function Upgrade() {
     if (balance >= (10*multiplier)){
         balance -= (10*multiplier);
         multiplier += 0.5 * multiplier;
+        multiplier = (Math.round(multiplier * 100)/100)
+        multiplierCost = (Math.round((10*multiplier)*100))/100
         updateCount()
-        document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($'+(10*multiplier)+ ')'
+        document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($'+(multiplierCost)+ ')'
     }
 }
 
