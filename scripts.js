@@ -11,14 +11,13 @@ function Click(){
 function Upgrade() {
     if (balance >= (10*multiplier)){
         balance -= (10*multiplier);
-        multiplier += 0.5;
+        multiplier += 0.5 * multiplier;
         updateCount()
         document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($'+(10*multiplier)+ ')'
-}
+    }
 }
 
 function updateCount() {
     document.getElementById('Text').innerText = '$' + balance;
     //console.log(balance) (for debug purposes)
 }
-
