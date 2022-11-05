@@ -1,22 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 h1 {
-  text-align: center;
   font-family: 'Ubuntu', sans-serif;
-  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2em;
+  color: #000;
 }
 
 .moneyBtn {
-  background-color: limegreen;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
   border: none;
-  drop-shadow: 10px 10px 10px #777;
-  
-  width: 10rem;
-  height: 10rem;
-  align-items: center;
-  
-  transition: all 1.5s;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  transition: cubic-bezier(1, 0, 0, 1) 0.3s;
 }
 
 .moneyBtn:hover {
-  scale: 1.1;
+  transform: scale(1.1);
+}
+
+.upgradeBtn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+
+  transition: cubic-bezier(1, 0, 0, 1) 0.3s;
+}
+
+.upgradeBtn:hover {
+  transform: scale(1.1);
+}
+
+.moneyBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.upgradesPanel {
+  display: flex;
+  justify-content: center;
 }
