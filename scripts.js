@@ -8,14 +8,17 @@ function Click(){
     document.getElementById('collectmoney').hidden = false;
 }
 
+
+var multiplierCostMultiplier = 1;
+
 function Upgrade() {
-    if (balance >= (10*multiplier)){
-        var multiplierCostMultiplier = 1;
+    if (balance >= (10*multiplierCostMultiplier)){
+        
         multiplier += 0.5 * multiplierCostMultiplier;
         balance -= (10*multiplier);
-        multiplierCost = (10*multiplier);
-        multiplierCostMultiplier += 1;
         
+        multiplierCostMultiplier += 1;
+        multiplierCost = (10*multiplierCostMultiplier);
         updateCount()
         document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($'+(multiplierCost)+ ')'
     }
