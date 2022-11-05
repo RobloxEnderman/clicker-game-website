@@ -1,5 +1,11 @@
 let balance = 0;
-let multiplier = 0.5;
+let multiplier = 1;
+
+let multiplierCost = 10;
+let multiplierCostMultiplier = 1;
+
+document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($' + (multiplierCost) + ')'
+
 
 function Click() {
   balance += (1 * multiplier);
@@ -9,18 +15,17 @@ function Click() {
 }
 
 
-var multiplierCostMultiplier = 1;
 
 function Upgrade() {
-  if (balance >= (10 * multiplierCostMultiplier)) {
+  if (balance >= (multiplierCost * multiplierCostMultiplier)) {
 
     multiplier += 0.5 * multiplierCostMultiplier;
-    balance -= (10 * multiplierCostMultiplier);
+    balance -= (multiplierCost * multiplierCostMultiplier);
 
     multiplierCostMultiplier += 1;
-    multiplierCost = (10 * multiplierCostMultiplier);
+    multiplierCost = (multiplierCost * multiplierCostMultiplier);
     updateCount()
-    document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($' + (multiplierCost) + ')'
+    document.getElementById('Multiplier').innerText = 'Upgrade Multiplier ($' + (multiplierCost * multiplierCostMultiplier) + ')'
   }
 }
 
